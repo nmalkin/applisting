@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Berkeley App Study</string>
+    <string name="welcome_description">This app is the starting point of our study. Together, we\'ll take a look at the apps running on your system and what they do.
+        \n\nFirst, we\'ll list which apps are installed on your phone.
+        \nNext, we\'ll upload them so you can take a look at them on your desktop computer.
+    </string>
+    <string name="welcome_text">Welcome!</string>
+    <string name="welcome_button">Let\'s get started!</string>
+    <string name="applist_description">Here are all the apps on your phone.\nThey\'re listed here by their \"package names\": short, unique labels.</string>
+    <string name="applist_extra">We\'ll upload just the names of these apps, nothing more. \nIf you want us to skip a particular app, just remove its name above.</string>
+    <string name="applist_upload">Upload</string>
+    <string name="success_text" >You\'re all set now, thank you! Please continue to the next portion of the study.\n\nIf asked, please provide the following key:</string>
+</resources>
