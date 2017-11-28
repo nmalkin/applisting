@@ -72,7 +72,6 @@ private fun parseResponse(response: String): UploadResult {
 }
 
 
-
 class UploadActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -102,8 +101,12 @@ class UploadActivity : AppCompatActivity() {
         override fun doInBackground(vararg args: String?): UploadResult {
             val data = args[0]!!
             val payload = encodePayload(data)
-            val response = post(URL, payload) ?: ""
-            return parseResponse(response)
+            return try {
+                val response = post(URL, payload) ?: ""
+                parseResponse(response)
+            } catch (e: Exception) {
+                UploadResult(UploadStatus.FAIL, null)
+            }
         }
 
         override fun onPostExecute(result: UploadResult) {
